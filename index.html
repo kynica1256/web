@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<center>
+		<h1 style="font-size: 50px;">Generator chat bot</h1>
+	</center>
+	<center>
+		<hr>
+		<div id='block-1'>
+			<div onclick='i++;creat(i, iddiv, idanswer, idquestion, o);' id='add' style="width: 50%;">ADD</div>
+			<div onclick='remove(o, iddiv, idanswer, idquestion)' id='remove' style="width: 50%;">REMOVE</div>
+		</div>
+		<br>
+		<h2>Token: </h2>
+		<input style="width: 300px;" type="text" id="Token" placeholder="Token">
+		<center>
+			<br><br>
+			<div id='elem'>
+				<input type="text" id="else" placeholder="else">
+			</div>
+		</center><br><br>
+		<button onclick="generate(o)"><h3>Generate</h3></button>
+	</center>
+	<br><br>
+	<hr>
+	<center><textarea rows="20" cols="100" name="text"></textarea></center><br>
+	<center><button onclick="leng = 'Node js'">Node js</button>&nbsp;&nbsp;<button onclick="leng = 'Python'">Python 3.8</button></center>
+	<center><div><h3>By default Python 3.8</h3></div></center>
+</body>
+</html>
